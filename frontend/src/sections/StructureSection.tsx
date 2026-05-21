@@ -45,9 +45,12 @@ export const StructureSection: React.FC = () => {
     <section className="py-section-padding bg-surface-container-lowest overflow-hidden">
       <div className="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-16 items-center">
         {/* Left - Image */}
-        <RevealOnScroll>
-          <div className="structure-gallery relative">
-            <DotGrid className="absolute -top-8 -left-8 w-32 h-32 text-secondary/40 z-0" />
+        <div className="relative">
+          <div className="absolute -top-5 -left-5 pointer-events-none" style={{ zIndex: 0, opacity: 0.65 }}>
+            <DotGrid className="w-40 h-40 text-secondary" />
+          </div>
+          <RevealOnScroll>
+          <div className="structure-gallery relative" style={{ zIndex: 1, position: 'relative' }}>
             <div className="structure-image-frame relative z-10 rounded-2xl overflow-hidden border-2 border-primary/20">
               <div className="structure-gallery__viewport">
                 {galleryImages.map((image, index) => (
@@ -78,7 +81,8 @@ export const StructureSection: React.FC = () => {
               <p className="text-body-md font-bold">Equipamentos de alta tecnologia</p>
             </div>
           </div>
-        </RevealOnScroll>
+          </RevealOnScroll>
+        </div>
 
         {/* Right - Content */}
         <RevealOnScroll delay="0.12s">

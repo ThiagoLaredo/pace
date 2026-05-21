@@ -104,27 +104,29 @@ export const UnitsSection: React.FC = () => {
 
                   <div className="unit-card__section">
                     <div className="unit-card__contacts">
-                      {unit.phones.map((phone, phoneIndex) => (
-                        <a
-                          key={phone}
-                          href={phoneIndex === 0 ? toWhatsAppHref(phone) : toPhoneHref(phone)}
-                          className="unit-card__chip"
-                          aria-label={
-                            phoneIndex === 0
-                              ? `Falar com a unidade ${unit.name} no WhatsApp`
-                              : `Ligar para a unidade ${unit.name}`
-                          }
-                          target={phoneIndex === 0 ? '_blank' : undefined}
-                          rel={phoneIndex === 0 ? 'noreferrer' : undefined}
-                        >
-                          {phoneIndex === 0 ? (
-                            <WhatsAppIcon className="unit-card__chip-icon" />
-                          ) : (
-                            <Icon name="call" className="unit-card__chip-icon" />
-                          )}
-                          <span>{phone}</span>
-                        </a>
-                      ))}
+                      <div className="unit-card__phones">
+                        {unit.phones.map((phone, phoneIndex) => (
+                          <a
+                            key={phone}
+                            href={phoneIndex === 0 ? toWhatsAppHref(phone) : toPhoneHref(phone)}
+                            className="unit-card__chip"
+                            aria-label={
+                              phoneIndex === 0
+                                ? `Falar com a unidade ${unit.name} no WhatsApp`
+                                : `Ligar para a unidade ${unit.name}`
+                            }
+                            target={phoneIndex === 0 ? '_blank' : undefined}
+                            rel={phoneIndex === 0 ? 'noreferrer' : undefined}
+                          >
+                            {phoneIndex === 0 ? (
+                              <WhatsAppIcon className="unit-card__chip-icon" />
+                            ) : (
+                              <Icon name="call" className="unit-card__chip-icon" />
+                            )}
+                            <span>{phone}</span>
+                          </a>
+                        ))}
+                      </div>
                       {unit.email ? (
                         <a href={`mailto:${unit.email}`} className="unit-card__chip unit-card__chip--email">
                           <Icon name="mail" className="unit-card__chip-icon" />

@@ -65,8 +65,8 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Right Decoration */}
-        <div className="hero-entrance hero-entrance--right hidden md:flex justify-end items-end">
-          <DotGrid className="w-48 h-48 text-secondary/30" />
+        <div className="hero-entrance hero-entrance--right hidden md:flex justify-end items-end" style={{ opacity: 0.55 }}>
+          <DotGrid className="w-48 h-48 text-secondary" />
         </div>
       </div>
 

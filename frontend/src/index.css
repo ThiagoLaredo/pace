@@ -108,7 +108,7 @@ body {
 }
 
 .dot-grid {
-  background-image: radial-gradient(circle, transparent 1.1px, currentColor 1.1px, currentColor 1.9px, transparent 1.9px);
+  background-image: radial-gradient(circle at 50% 50%, currentColor 0 20%, transparent 24%);
   background-size: 16px 16px;
 }
 
@@ -378,6 +378,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+  font-size: 14px;
 }
 
 .unit-card__section:last-child {
@@ -403,13 +404,22 @@ body {
 
 .unit-card__contacts {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.75rem;
+}
+
+.unit-card__phones {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
 }
 
 .unit-card__chip {
   display: inline-flex;
   align-items: center;
+  width: fit-content;
   gap: 0.5rem;
   padding: 0.7rem 0.9rem;
   border-radius: 9999px;
@@ -472,6 +482,10 @@ body {
 @media (max-width: 768px) {
   .unit-card {
     grid-template-columns: 1fr;
+  }
+
+  .unit-card__phones {
+    flex-wrap: wrap;
   }
 
   .unit-card__media {
