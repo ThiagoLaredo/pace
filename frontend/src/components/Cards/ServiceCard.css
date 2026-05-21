@@ -16,7 +16,7 @@
 
 .service-card__description {
   margin: 0 0 1rem;
-  color: inherit;
+  color: var(--on-surface-variant);
 }
 
 .service-card__cta {
