@@ -47,7 +47,7 @@ export const StructureSection: React.FC = () => {
         {/* Left - Image */}
         <RevealOnScroll>
           <div className="structure-gallery relative">
-            <DotGrid className="absolute -top-8 -left-8 w-32 h-32 text-secondary/30 z-0" />
+            <DotGrid className="absolute -top-8 -left-8 w-32 h-32 text-secondary/40 z-0" />
             <div className="structure-image-frame relative z-10 rounded-2xl overflow-hidden border-2 border-primary/20">
               <div className="structure-gallery__viewport">
                 {galleryImages.map((image, index) => (
