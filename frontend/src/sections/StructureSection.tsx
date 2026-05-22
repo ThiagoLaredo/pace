@@ -67,7 +67,7 @@ export const StructureSection: React.FC = () => {
 
   return (
     <section className="py-section-padding bg-surface-container-lowest overflow-hidden">
-      <div className="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         {/* Left - Image */}
         <div className="relative">
           <div className="absolute -top-5 -left-5 pointer-events-none" style={{ zIndex: 0, opacity: 0.65 }}>
@@ -134,8 +134,9 @@ export const StructureSection: React.FC = () => {
               </li>
               <li className="structure-feature__item flex items-center gap-3">
                 <CheckCircleIcon />
-                <span className="font-bold">Equipamentos de última geração para avaliação e treino</span>
+                <span className="font-bold">Equipamentos de última geração para avaliação, treino, reabilitação e recuperação.</span>
               </li>
+            
             </ul>
             <PrimaryButton variant="primary">Agende uma visita</PrimaryButton>
           </div>

@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/', label: 'Início' },
   { to: '/sobre', label: 'Sobre' },
   { to: '/servicos', label: 'Serviços' },
+  { to: '/unidades', label: 'Unidades' },
   { to: '/equipe', label: 'Equipe' },
   { to: '/contato', label: 'Contato' },
 ];
@@ -28,7 +29,11 @@ const Header = () => {
           <span className="header__logo-text">Clínica Pace</span>
         </Link>
 
-        <nav className={`header__nav${menuOpen ? ' header__nav--open' : ''}`} aria-label="Navegação principal">
+        <nav
+          id="primary-navigation"
+          className={`header__nav${menuOpen ? ' header__nav--open' : ''}`}
+          aria-label="Navegação principal"
+        >
           <ul className="header__nav-list">
             {navLinks.map((link) => (
               <li key={link.to} className="header__nav-item">
@@ -56,10 +61,13 @@ const Header = () => {
         </nav>
 
         <button
+          type="button"
           className="header__menu-toggle"
           onClick={toggleMenu}
+          data-open={menuOpen}
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
         >
           <span className="header__hamburger" data-open={menuOpen}>
             <span />

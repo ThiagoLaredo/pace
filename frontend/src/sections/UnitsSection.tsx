@@ -25,7 +25,7 @@ const units = [
     phones: ['(11) 99457-3619', '(11) 2729-4268'],
     email: 'jardins@clinicapace.com.br',
     address: 'R. Haddock Lobo, 1421 / Loja 08 – Mezanino',
-    region: 'Jardins | Sao Paulo',
+    region: 'Jardins | São Paulo',
     hours: ['Segunda a Sexta – 7h as 21h', 'Sabado – 7h as 12h'],
   },
   {
@@ -36,7 +36,7 @@ const units = [
     phones: ['(11) 99455-6493', '(11) 2373-6486'],
     email: 'vilamariana@clinicapace.com.br',
     address: 'Rua Dr. Amancio de Carvalho, 182 – Conjunto 401',
-    region: 'Vila Mariana | Sao Paulo',
+    region: 'Vila Mariana | São Paulo',
     hours: ['Segunda a Sexta – 7h as 21h', 'Sabado – 7h as 12h'],
   },
   {
@@ -46,7 +46,7 @@ const units = [
       '/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-453.webp 453w',
     phones: ['(11) 93231-1310', '(11) 2373-6486'],
     address: 'Rua Alvarenga, 2022',
-    region: 'Butanta | Sao Paulo',
+    region: 'Butanta | São Paulo',
     hours: ['Segunda a Sexta – 7h as 21h', 'Sabado – 7h as 12h'],
   },
   {
@@ -57,14 +57,14 @@ const units = [
     phones: ['(11) 99100-2699', '(11) 3065-2002'],
     email: 'paulistano@clinicapace.com.br',
     address: 'R. Honduras, 1400',
-    region: 'Jardim America | Sao Paulo - SP',
+    region: 'Jardim America | São Paulo - SP',
     hours: ['Segunda a Sexta – 7h as 21h', 'Sabado – 8h as 13h'],
   },
 ];
 
 export const UnitsSection: React.FC = () => {
   return (
-    <section className="py-section-padding units-section">
+    <section id="unidades" className="py-section-padding units-section">
       <div className="max-w-container-max mx-auto px-gutter">
         <RevealOnScroll>
           <SectionTitle

@@ -41,14 +41,11 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-        
-        {/* Title overlay */}
-        <div className="absolute bottom-4 left-6">
-          <h4 className="service-card__title">{title}</h4>
-        </div>
       </div>
 
       <div className="service-card__content">
+        <h4 className="service-card__title">{title}</h4>
+
         {/* Description */}
         <p className="service-card__description">{description}</p>
 

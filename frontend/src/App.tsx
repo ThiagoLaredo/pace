@@ -6,6 +6,7 @@ import MainLayout from './layouts/MainLayout';
 const Home = lazy(() => import('./pages/Home'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Servicos = lazy(() => import('./pages/Servicos'));
+const Unidades = lazy(() => import('./pages/Unidades'));
 const Equipe = lazy(() => import('./pages/Equipe'));
 const Contato = lazy(() => import('./pages/Contato'));
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/servicos" element={<Servicos />} />
+            <Route path="/unidades" element={<Unidades />} />
             <Route path="/equipe" element={<Equipe />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<Home />} />

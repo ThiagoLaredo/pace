@@ -342,6 +342,12 @@ body {
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
 }
 
+.cta-section__cta {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
 .units-section {
   background: linear-gradient(180deg, rgba(1, 81, 88, 0.1), transparent);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -397,7 +403,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 0.9rem;
+  gap: 1.2rem;
   padding: 1.5rem;
   padding-right: calc(240px + 0.5rem);
   padding-bottom: 3rem;
@@ -415,13 +421,13 @@ body {
   align-items: center;
   width: fit-content;
   font-family: var(--heading);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--background);
-  background-color: var(--primary);
+  color: var(--primary);
+  background-color: var(--accent-bg); 
   padding: 0.25em 0.55em;
   border-radius: 0.3rem;
 }

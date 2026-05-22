@@ -100,39 +100,98 @@
 /* Hamburger */
 .header__menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background:
+    radial-gradient(circle at 30% 25%, rgba(29, 221, 184, 0.35), transparent 58%),
+    rgba(9, 50, 54, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  padding: 0;
   cursor: pointer;
   flex-shrink: 0;
+  transition: transform 220ms var(--ease-smooth), box-shadow 260ms var(--ease-smooth),
+    background-color 220ms var(--ease-smooth);
+}
+
+.header__menu-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(29, 221, 184, 0.2);
+}
+
+.header__menu-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 221, 184, 0.35), 0 12px 24px rgba(0, 0, 0, 0.22);
+}
+
+.header__menu-toggle[data-open='true'] {
+  background:
+    radial-gradient(circle at 30% 25%, rgba(179, 209, 122, 0.35), transparent 58%),
+    rgba(9, 50, 54, 0.62);
 }
 
 .header__hamburger {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  width: 24px;
+  justify-content: center;
+  gap: 0;
+  width: 20px;
+  height: 16px;
 }
 
 .header__hamburger span {
+  position: absolute;
+  left: 0;
   display: block;
   height: 2px;
   width: 100%;
   background-color: var(--on-surface);
-  border-radius: 2px;
-  transition: transform 300ms var(--ease-smooth), opacity 200ms;
+  border-radius: 999px;
+  transform-origin: center;
+  transition: transform 360ms cubic-bezier(0.22, 1, 0.36, 1), opacity 260ms ease,
+    width 260ms ease, background-color 260ms ease;
+}
+
+.header__hamburger span:nth-child(1) {
+  top: 0;
+  width: 70%;
+}
+
+.header__hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__hamburger span:nth-child(3) {
+  bottom: 0;
+  width: 80%;
+  right: 0;
+  left: auto;
 }
 
 .header__hamburger[data-open='true'] span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .header__hamburger[data-open='true'] span:nth-child(2) {
   opacity: 0;
+  transform: translateY(-50%) scaleX(0.2);
 }
 
 .header__hamburger[data-open='true'] span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  width: 100%;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 /* Overlay */

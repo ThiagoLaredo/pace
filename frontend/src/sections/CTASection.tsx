@@ -18,7 +18,7 @@ export const CTASection: React.FC = () => {
                 elevar seu nível.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <PrimaryButton variant="primary" className="text-lg px-12 py-5 cta-section__cta">
+                <PrimaryButton variant="primary" className="px-12 py-5 cta-section__cta">
                   Marcar Consulta Agora
                 </PrimaryButton>
               </div>

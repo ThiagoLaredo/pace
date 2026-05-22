@@ -12,19 +12,19 @@ const partners = [
     name: 'Boali',
     image: '/images/optimized/partners/boali-fallback.webp',
     imageSrcSet:
-      '/images/optimized/partners/boali-160.webp 160w, /images/optimized/partners/boali-240.webp 240w, /images/optimized/partners/boali-320.webp 320w',
+      '/images/optimized/partners/boali-160.webp 160w, /images/optimized/partners/boali-226.webp 226w',
   },
   {
     name: 'Bauerfeind',
     image: '/images/optimized/partners/bauerfeind-fallback.webp',
     imageSrcSet:
-      '/images/optimized/partners/bauerfeind-160.webp 160w, /images/optimized/partners/bauerfeind-240.webp 240w, /images/optimized/partners/bauerfeind-320.webp 320w',
+      '/images/optimized/partners/bauerfeind-160.webp 160w, /images/optimized/partners/bauerfeind-226.webp 226w',
   },
   {
     name: 'DJO',
     image: '/images/optimized/partners/djo-fallback.webp',
     imageSrcSet:
-      '/images/optimized/partners/djo-160.webp 160w, /images/optimized/partners/djo-240.webp 240w, /images/optimized/partners/djo-320.webp 320w',
+      '/images/optimized/partners/djo-160.webp 160w, /images/optimized/partners/djo-226.webp 226w',
   },
 ];
 
