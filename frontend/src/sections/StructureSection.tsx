@@ -53,14 +53,16 @@ export const StructureSection: React.FC = () => {
           <div className="structure-gallery relative" style={{ zIndex: 1, position: 'relative' }}>
             <div className="structure-image-frame relative z-10 rounded-2xl overflow-hidden border-2 border-primary/20">
               <div className="structure-gallery__viewport">
-                {galleryImages.map((image, index) => (
-                  <img
-                    key={image}
-                    alt={`Nossa Estrutura ${index + 1}`}
-                    className={`structure-image ${index === activeImageIndex ? 'structure-image--active' : ''}`}
-                    src={image}
-                  />
-                ))}
+                <img
+                  key={galleryImages[activeImageIndex]}
+                  alt={`Nossa Estrutura ${activeImageIndex + 1}`}
+                  className="structure-image structure-image--active"
+                  src={galleryImages[activeImageIndex]}
+                  width={1600}
+                  height={1067}
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div className="structure-gallery__bullets" aria-label="Galeria da estrutura">
                 {galleryImages.map((image, index) => (

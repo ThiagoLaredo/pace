@@ -24,7 +24,14 @@ export const HeroSection: React.FC = () => {
         <img
           alt="High performance training center"
           className="w-full h-full object-cover"
-          src="/images/hero-2.jpg"
+          src="/images/optimized/hero/hero-main-fallback.webp"
+          srcSet="/images/optimized/hero/hero-main-640.webp 640w, /images/optimized/hero/hero-main-960.webp 960w, /images/optimized/hero/hero-main-1280.webp 1280w"
+          sizes="100vw"
+          width={1366}
+          height={530}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <div className="hero__overlay absolute inset-0"></div>
       </div>

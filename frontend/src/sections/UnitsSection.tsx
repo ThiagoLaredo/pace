@@ -77,6 +77,8 @@ export const UnitsSection: React.FC = () => {
                     className="unit-card__image"
                     loading="lazy"
                     decoding="async"
+                    width={453}
+                    height={302}
                     sizes="(max-width: 768px) 100vw, 220px"
                   />
                 </div>

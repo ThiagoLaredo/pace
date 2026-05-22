@@ -167,7 +167,7 @@ async function generateVariants(job) {
     throw new Error(`Unable to read metadata for ${job.id}`);
   }
 
-  const validWidths = [...new Set(job.widths)]
+  const validWidths = [...new Set([...job.widths, metadata.width])]
     .sort((a, b) => a - b)
     .filter((width) => width <= metadata.width);
 
