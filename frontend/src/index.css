@@ -183,6 +183,22 @@ body {
   background: linear-gradient(90deg, rgba(1, 81, 88, 0.95) 0%, rgba(1, 81, 88, 0.7) 38%, rgba(1, 81, 88, 0.15) 72%, transparent 100%);
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    align-items: flex-start;
+    min-height: 82vh;
+    padding-top: 56px !important;
+  }
+
+  .hero-section .hero-entrance--left {
+    padding-top: 0.75rem;
+  }
+
+  .hero-section .hero-entrance--scroll {
+    display: none;
+  }
+}
+
 .structure-features-list .icon {
   color: var(--primary);
 }
@@ -540,6 +556,23 @@ body {
 }
 
 @media (max-width: 768px) {
+  .services-section__intro {
+    align-items: center;
+  }
+
+  .services-section__heading {
+    text-align: center;
+  }
+
+  .structure-tech-badge {
+    position: static !important;
+    margin-top: 0.9rem;
+    right: auto;
+    bottom: auto;
+    max-width: 100%;
+    display: none
+  }
+
   .unit-card {
     min-height: unset;
     display: flex;
@@ -563,6 +596,27 @@ body {
     min-height: unset;
   }
 
+  .unit-card__title {
+    font-size: 0.92rem;
+  }
+
+  .unit-card__region {
+    font-size: 0.88rem;
+  }
+
+  .unit-card__section {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .unit-card__chip {
+    font-size: 13px;
+  }
+
+  .unit-card__cta {
+    font-size: 13px;
+  }
+
   .unit-card__cta {
     position: static;
     margin-top: 0.5rem;
@@ -577,6 +631,21 @@ body {
 
   .unit-card__contacts {
     gap: 0.65rem;
+  }
+
+  .cta-section__card {
+    padding: 1.8rem 1.25rem !important;
+    border-radius: 1.25rem;
+  }
+
+  .cta-section__title {
+    font-size: 1.9rem !important;
+    line-height: 1.08;
+  }
+
+  .cta-section__cta {
+    padding: 0.85rem 1.5rem !important;
+    font-size: 13px !important;
   }
 
   .unit-card__chip--mobile-only {

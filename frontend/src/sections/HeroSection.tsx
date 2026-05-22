@@ -18,7 +18,7 @@ export const HeroSection: React.FC = () => {
   }, [heroKeywords.length]);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-[72px]">
+    <section className="hero-section relative min-h-[90vh] flex items-center overflow-hidden pt-[72px]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img

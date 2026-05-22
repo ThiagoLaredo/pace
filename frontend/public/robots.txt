@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://www.clinicapace.com.br/sitemap.xml
+Host: www.clinicapace.com.br

@@ -104,7 +104,7 @@ export const StructureSection: React.FC = () => {
               </div>
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 glass-dark p-6 rounded-lg border border-secondary/50 max-w-[200px] z-20">
+            <div className="absolute -bottom-6 -right-6 glass-dark p-6 rounded-lg border border-secondary/50 max-w-[200px] z-20 structure-tech-badge">
               <p className="text-label-bold uppercase text-secondary mb-1">Tecnologia</p>
               <p className="text-body-md font-bold">Equipamentos de alta tecnologia</p>
             </div>

@@ -55,11 +55,11 @@ const services = [
 
 export const ServicesSection: React.FC = () => {
   return (
-    <section className="py-section-padding relative" id="servicos">
+    <section className="py-section-padding relative services-section" id="servicos">
       <div className="max-w-container-max mx-auto px-gutter">
         <RevealOnScroll>
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div className="space-y-4">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 services-section__intro">
+            <div className="space-y-4 services-section__heading">
             <span className="text-primary font-label-bold uppercase tracking-widest">
                 Tratamentos especializados
             </span>
