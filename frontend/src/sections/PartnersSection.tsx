@@ -54,8 +54,8 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ compact = fals
                 sizes="(max-width: 768px) 120px, 160px"
                 loading="lazy"
                 decoding="async"
-                width={320}
-                height={120}
+                width={226}
+                height={100}
               />
             </RevealOnScroll>
           ))}

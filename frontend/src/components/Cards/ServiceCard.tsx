@@ -44,7 +44,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       </div>
 
       <div className="service-card__content">
-        <h4 className="service-card__title">{title}</h4>
+        <h3 className="service-card__title">{title}</h3>
 
         {/* Description */}
         <p className="service-card__description">{description}</p>
