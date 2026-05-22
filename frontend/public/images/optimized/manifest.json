@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22T13:33:12.907Z",
+  "generatedAt": "2026-05-22T13:47:04.265Z",
   "includeAvif": false,
   "images": {
     "hero-main": {
@@ -133,6 +133,126 @@
       },
       "avif": null,
       "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC4RJT_ekZF9WtoSIKnye6grmhnNJxjnBHsel8uoDtMKHJCtF61N92C4JQjLK_neC2wSaldfD3kvSIXKwuaUOLvs9CelTgsjyHn7RNXAxX0hnMPk08GWTMaN55qUaoMgPRYHikjiP00FZ6Q5LTmTuMUF0v-hi6NUpd7dHxTNxAh5S3T5zs8NKOIrCFwIxXHWvRJnm39SuOE9ccgRXz7fhv9jEqKnDoeZ0onXndMqRpfL9njoK-0u1Nqe30pC2ZdCwIpX6tj0gzS2mo"
+    },
+    "structure-18": {
+      "id": "structure-18",
+      "width": 962,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-18-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-18-480.webp 480w, /images/optimized/clinica/pace-clinica-18-640.webp 640w, /images/optimized/clinica/pace-clinica-18-960.webp 960w, /images/optimized/clinica/pace-clinica-18-962.webp 962w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-18.jpg"
+    },
+    "structure-27": {
+      "id": "structure-27",
+      "width": 963,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-27-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-27-480.webp 480w, /images/optimized/clinica/pace-clinica-27-640.webp 640w, /images/optimized/clinica/pace-clinica-27-960.webp 960w, /images/optimized/clinica/pace-clinica-27-963.webp 963w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-27.jpg"
+    },
+    "structure-35": {
+      "id": "structure-35",
+      "width": 964,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-35-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-35-480.webp 480w, /images/optimized/clinica/pace-clinica-35-640.webp 640w, /images/optimized/clinica/pace-clinica-35-960.webp 960w, /images/optimized/clinica/pace-clinica-35-964.webp 964w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-35.jpg"
+    },
+    "structure-44": {
+      "id": "structure-44",
+      "width": 964,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-44-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-44-480.webp 480w, /images/optimized/clinica/pace-clinica-44-640.webp 640w, /images/optimized/clinica/pace-clinica-44-960.webp 960w, /images/optimized/clinica/pace-clinica-44-964.webp 964w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-44.jpg"
+    },
+    "structure-63": {
+      "id": "structure-63",
+      "width": 962,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-63-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-63-480.webp 480w, /images/optimized/clinica/pace-clinica-63-640.webp 640w, /images/optimized/clinica/pace-clinica-63-960.webp 960w, /images/optimized/clinica/pace-clinica-63-962.webp 962w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-63.jpg"
+    },
+    "structure-80": {
+      "id": "structure-80",
+      "width": 964,
+      "height": 642,
+      "sizes": "(max-width: 1024px) 100vw, 50vw",
+      "webp": {
+        "src": "/images/optimized/clinica/pace-clinica-80-fallback.webp",
+        "srcSet": "/images/optimized/clinica/pace-clinica-80-480.webp 480w, /images/optimized/clinica/pace-clinica-80-640.webp 640w, /images/optimized/clinica/pace-clinica-80-960.webp 960w, /images/optimized/clinica/pace-clinica-80-964.webp 964w"
+      },
+      "avif": null,
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-80.jpg"
+    },
+    "partner-balance": {
+      "id": "partner-balance",
+      "width": 452,
+      "height": 200,
+      "sizes": "(max-width: 768px) 120px, 160px",
+      "webp": {
+        "src": "/images/optimized/partners/balance-fallback.webp",
+        "srcSet": "/images/optimized/partners/balance-160.webp 160w, /images/optimized/partners/balance-240.webp 240w, /images/optimized/partners/balance-320.webp 320w, /images/optimized/partners/balance-452.webp 452w"
+      },
+      "avif": null,
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfH-TSOfMioAZRHp1BFheFgLB93buCNjMsj97-MD2qDOMD5_zdMO9j1ge7fv9fd1tqaCUsPysQk2pHaqpDWJIiRZFK_mn3Qt4ZkS_NeKlh8OopetJTVSUh6TTJQ7u_xISDw5dMKbXV7tC3e1gBQySZ3xHoo1JI2kPXZmbV1jy5BgdPd9NHgxej78wpkLmOtFf9S2w4FbdGuBOYQOMMn7YDan98u0DYK6XQP8fqu0oFAeSAoyiO9Ea2s71wGS0_VjKlPzkiClsXeg"
+    },
+    "partner-boali": {
+      "id": "partner-boali",
+      "width": 226,
+      "height": 100,
+      "sizes": "(max-width: 768px) 120px, 160px",
+      "webp": {
+        "src": "/images/optimized/partners/boali-fallback.webp",
+        "srcSet": "/images/optimized/partners/boali-160.webp 160w, /images/optimized/partners/boali-226.webp 226w"
+      },
+      "avif": null,
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBPslaSn0KgNu6S6dozFjiG7jomcXtX4ivXZABtNGMn6y71N1l9qCHI7lFVYdp3_8C642oaDvZaj5eimVJ7jBKYDk9NO0ln2-0-ij0cssRRFmLmwhQZztSY0BJOXT4Xxu_Ng07GFaqnf5CtCcCM3Mkrc7P3gsRCPNpKNVAegGdDvbjy4rIbqc-RmkvqgmcfAZYsejS97wcOOYUOSF2Xt5vjObIp36snAqTlMqMYMKmXmssIFdYfRpzgmaqGf4caC-xs7vjiMKQx2q0"
+    },
+    "partner-bauerfeind": {
+      "id": "partner-bauerfeind",
+      "width": 226,
+      "height": 100,
+      "sizes": "(max-width: 768px) 120px, 160px",
+      "webp": {
+        "src": "/images/optimized/partners/bauerfeind-fallback.webp",
+        "srcSet": "/images/optimized/partners/bauerfeind-160.webp 160w, /images/optimized/partners/bauerfeind-226.webp 226w"
+      },
+      "avif": null,
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnMBYPBpR6ndoIy_MXRkyWOOdIZs-fEL8b9YPGkVF-aepfo-iqSfTSLaAnaPOFdK79OZ17-sGR4KtPtCFvrFhfWyG9ZOZ89abGgwFCPSG-YCYRGD5Se6EQzZigzX7iSti5t34d-rJRAUXwImcOx-tOa67uT6mbvd7ZQSTP6oq4zCuaBhJw19aAn5V-vRzO1zU6jyDi1N9FKR2pamu3uXY5gXFsQTNIyvrA_pEdJAdnctO4C4_0YmXJ_9zqNAU0Zpahy8JJZFx2ECA"
+    },
+    "partner-djo": {
+      "id": "partner-djo",
+      "width": 226,
+      "height": 100,
+      "sizes": "(max-width: 768px) 120px, 160px",
+      "webp": {
+        "src": "/images/optimized/partners/djo-fallback.webp",
+        "srcSet": "/images/optimized/partners/djo-160.webp 160w, /images/optimized/partners/djo-226.webp 226w"
+      },
+      "avif": null,
+      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbjWtAA220zH__En_RMsQ5-lJ2-_IwQvvcaTSC5pC6VXQMg8h5chuHzvDdiDxQz0zuWTguEaRys7mF0-LZMphjlLxu6egu4CA2OLV6W2LwtgRHdxjUpkt0aNeIMIAyWHFcFhiUUYl_RDImIcwyReVm4gR9JwFhRv2vdVTAUxTps4GvfhbdJ_axZb6CoTKWjGLB4qjswfDs0aGqgZZNWCMOehWAXNZollnbLRvzaCtXoZlrFY3VbA1-tCPRdtSans-KMGEAANOAI4Y"
     }
   }
 }

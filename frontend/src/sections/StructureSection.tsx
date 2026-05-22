@@ -4,12 +4,36 @@ import { DotGrid, RevealOnScroll } from '../components/Common/SectionComponents'
 import { CheckCircleIcon } from '../components/Common/Icon';
 
 const galleryImages = [
-  '/images/clinica/pace_clinica-18.jpg',
-  '/images/clinica/pace_clinica-27.jpg',
-  '/images/clinica/pace_clinica-35.jpg',
-  '/images/clinica/pace_clinica-44.jpg',
-  '/images/clinica/pace_clinica-63.jpg',
-  '/images/clinica/pace_clinica-80.jpg',
+  {
+    src: '/images/optimized/clinica/pace-clinica-18-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-18-480.webp 480w, /images/optimized/clinica/pace-clinica-18-640.webp 640w, /images/optimized/clinica/pace-clinica-18-960.webp 960w',
+  },
+  {
+    src: '/images/optimized/clinica/pace-clinica-27-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-27-480.webp 480w, /images/optimized/clinica/pace-clinica-27-640.webp 640w, /images/optimized/clinica/pace-clinica-27-960.webp 960w',
+  },
+  {
+    src: '/images/optimized/clinica/pace-clinica-35-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-35-480.webp 480w, /images/optimized/clinica/pace-clinica-35-640.webp 640w, /images/optimized/clinica/pace-clinica-35-960.webp 960w',
+  },
+  {
+    src: '/images/optimized/clinica/pace-clinica-44-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-44-480.webp 480w, /images/optimized/clinica/pace-clinica-44-640.webp 640w, /images/optimized/clinica/pace-clinica-44-960.webp 960w',
+  },
+  {
+    src: '/images/optimized/clinica/pace-clinica-63-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-63-480.webp 480w, /images/optimized/clinica/pace-clinica-63-640.webp 640w, /images/optimized/clinica/pace-clinica-63-960.webp 960w',
+  },
+  {
+    src: '/images/optimized/clinica/pace-clinica-80-fallback.webp',
+    srcSet:
+      '/images/optimized/clinica/pace-clinica-80-480.webp 480w, /images/optimized/clinica/pace-clinica-80-640.webp 640w, /images/optimized/clinica/pace-clinica-80-960.webp 960w',
+  },
 ];
 
 function getRandomNextIndex(currentIndex: number) {
@@ -54,12 +78,14 @@ export const StructureSection: React.FC = () => {
             <div className="structure-image-frame relative z-10 rounded-2xl overflow-hidden border-2 border-primary/20">
               <div className="structure-gallery__viewport">
                 <img
-                  key={galleryImages[activeImageIndex]}
+                  key={galleryImages[activeImageIndex].src}
                   alt={`Nossa Estrutura ${activeImageIndex + 1}`}
                   className="structure-image structure-image--active"
-                  src={galleryImages[activeImageIndex]}
-                  width={1600}
-                  height={1067}
+                  src={galleryImages[activeImageIndex].src}
+                  srcSet={galleryImages[activeImageIndex].srcSet}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  width={962}
+                  height={642}
                   loading="lazy"
                   decoding="async"
                 />
@@ -67,7 +93,7 @@ export const StructureSection: React.FC = () => {
               <div className="structure-gallery__bullets" aria-label="Galeria da estrutura">
                 {galleryImages.map((image, index) => (
                   <button
-                    key={image}
+                    key={image.src}
                     type="button"
                     className={`structure-gallery__bullet ${index === activeImageIndex ? 'structure-gallery__bullet--active' : ''}`}
                     onClick={() => setActiveImageIndex(index)}

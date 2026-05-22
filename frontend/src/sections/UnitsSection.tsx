@@ -19,7 +19,9 @@ const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = '' }) => (
 const units = [
   {
     name: 'Jardins',
-    image: '/images/unidades/Pace-Site-2025-Unidades-Jardins.jpg',
+    image: '/images/optimized/unidades/jardins-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/unidades/jardins-320.webp 320w, /images/optimized/unidades/jardins-453.webp 453w',
     phones: ['(11) 99457-3619', '(11) 2729-4268'],
     email: 'jardins@clinicapace.com.br',
     address: 'R. Haddock Lobo, 1421 / Loja 08 – Mezanino',
@@ -28,7 +30,9 @@ const units = [
   },
   {
     name: 'Vila Mariana',
-    image: '/images/unidades/Pace-Site-2025-Unidades-Vila-Mariana.jpg',
+    image: '/images/optimized/unidades/vila-mariana-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/unidades/vila-mariana-320.webp 320w, /images/optimized/unidades/vila-mariana-453.webp 453w',
     phones: ['(11) 99455-6493', '(11) 2373-6486'],
     email: 'vilamariana@clinicapace.com.br',
     address: 'Rua Dr. Amancio de Carvalho, 182 – Conjunto 401',
@@ -37,7 +41,9 @@ const units = [
   },
   {
     name: 'Butanta / USP',
-    image: '/images/unidades/Pace-Site-2025-Unidades-Butanta.jpg',
+    image: '/images/optimized/unidades/butanta-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-453.webp 453w',
     phones: ['(11) 93231-1310', '(11) 2373-6486'],
     address: 'Rua Alvarenga, 2022',
     region: 'Butanta | Sao Paulo',
@@ -45,7 +51,9 @@ const units = [
   },
   {
     name: 'Club Athletico Paulistano',
-    image: '/images/unidades/Pace-Site-2025-Unidades-CAP (1).jpg',
+    image: '/images/optimized/unidades/cap-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/unidades/cap-320.webp 320w, /images/optimized/unidades/cap-453.webp 453w',
     phones: ['(11) 99100-2699', '(11) 3065-2002'],
     email: 'paulistano@clinicapace.com.br',
     address: 'R. Honduras, 1400',
@@ -73,6 +81,7 @@ export const UnitsSection: React.FC = () => {
                 <div className="unit-card__media">
                   <img
                     src={unit.image}
+                    srcSet={unit.imageSrcSet}
                     alt={unit.name}
                     className="unit-card__image"
                     loading="lazy"

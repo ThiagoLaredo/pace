@@ -4,23 +4,27 @@ import { RevealOnScroll } from '../components/Common/SectionComponents';
 const partners = [
   {
     name: 'Balance',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBZfH-TSOfMioAZRHp1BFheFgLB93buCNjMsj97-MD2qDOMD5_zdMO9j1ge7fv9fd1tqaCUsPysQk2pHaqpDWJIiRZFK_mn3Qt4ZkS_NeKlh8OopetJTVSUh6TTJQ7u_xISDw5dMKbXV7tC3e1gBQySZ3xHoo1JI2kPXZmbV1jy5BgdPd9NHgxej78wpkLmOtFf9S2w4FbdGuBOYQOMMn7YDan98u0DYK6XQP8fqu0oFAeSAoyiO9Ea2s71wGS0_VjKlPzkiClsXeg',
+    image: '/images/optimized/partners/balance-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/partners/balance-160.webp 160w, /images/optimized/partners/balance-240.webp 240w, /images/optimized/partners/balance-320.webp 320w',
   },
   {
     name: 'Boali',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBPslaSn0KgNu6S6dozFjiG7jomcXtX4ivXZABtNGMn6y71N1l9qCHI7lFVYdp3_8C642oaDvZaj5eimVJ7jBKYDk9NO0ln2-0-ij0cssRRFmLmwhQZztSY0BJOXT4Xxu_Ng07GFaqnf5CtCcCM3Mkrc7P3gsRCPNpKNVAegGdDvbjy4rIbqc-RmkvqgmcfAZYsejS97wcOOYUOSF2Xt5vjObIp36snAqTlMqMYMKmXmssIFdYfRpzgmaqGf4caC-xs7vjiMKQx2q0',
+    image: '/images/optimized/partners/boali-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/partners/boali-160.webp 160w, /images/optimized/partners/boali-240.webp 240w, /images/optimized/partners/boali-320.webp 320w',
   },
   {
     name: 'Bauerfeind',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCnMBYPBpR6ndoIy_MXRkyWOOdIZs-fEL8b9YPGkVF-aepfo-iqSfTSLaAnaPOFdK79OZ17-sGR4KtPtCFvrFhfWyG9ZOZ89abGgwFCPSG-YCYRGD5Se6EQzZigzX7iSti5t34d-rJRAUXwImcOx-tOa67uT6mbvd7ZQSTP6oq4zCuaBhJw19aAn5V-vRzO1zU6jyDi1N9FKR2pamu3uXY5gXFsQTNIyvrA_pEdJAdnctO4C4_0YmXJ_9zqNAU0Zpahy8JJZFx2ECA',
+    image: '/images/optimized/partners/bauerfeind-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/partners/bauerfeind-160.webp 160w, /images/optimized/partners/bauerfeind-240.webp 240w, /images/optimized/partners/bauerfeind-320.webp 320w',
   },
   {
     name: 'DJO',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAbjWtAA220zH__En_RMsQ5-lJ2-_IwQvvcaTSC5pC6VXQMg8h5chuHzvDdiDxQz0zuWTguEaRys7mF0-LZMphjlLxu6egu4CA2OLV6W2LwtgRHdxjUpkt0aNeIMIAyWHFcFhiUUYl_RDImIcwyReVm4gR9JwFhRv2vdVTAUxTps4GvfhbdJ_axZb6CoTKWjGLB4qjswfDs0aGqgZZNWCMOehWAXNZollnbLRvzaCtXoZlrFY3VbA1-tCPRdtSans-KMGEAANOAI4Y',
+    image: '/images/optimized/partners/djo-fallback.webp',
+    imageSrcSet:
+      '/images/optimized/partners/djo-160.webp 160w, /images/optimized/partners/djo-240.webp 240w, /images/optimized/partners/djo-320.webp 320w',
   },
 ];
 
@@ -46,6 +50,12 @@ export const PartnersSection: React.FC<PartnersSectionProps> = ({ compact = fals
                 alt={partner.name}
                 className={`h-10 md:h-12 w-auto object-contain ${compact ? 'partners-section__logo--compact' : ''}`}
                 src={partner.image}
+                srcSet={partner.imageSrcSet}
+                sizes="(max-width: 768px) 120px, 160px"
+                loading="lazy"
+                decoding="async"
+                width={320}
+                height={120}
               />
             </RevealOnScroll>
           ))}
