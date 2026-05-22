@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '../Common/Icon';
 import './ServiceCard.css';
 
 export interface ServiceCardProps {
@@ -13,7 +14,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   image,
-  linkText = 'Saber mais',
+  linkText = 'Saiba Mais',
   linkHref = '#',
 }) => {
   return (
@@ -29,23 +30,21 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         
         {/* Title overlay */}
         <div className="absolute bottom-4 left-6">
-          <h4 className="font-headline-md text-headline-md uppercase">{title}</h4>
+          <h4 className="service-card__title">{title}</h4>
         </div>
       </div>
 
       <div className="service-card__content">
         {/* Description */}
-        <p className="service-card__description font-body-md">{description}</p>
+        <p className="service-card__description">{description}</p>
 
         {/* Link */}
         <a
           href={linkHref}
-          className="service-card__cta font-label-bold uppercase"
+          className="service-card__cta"
         >
           {linkText}
-          <span className="service-card__arrow" aria-hidden="true">
-            &gt;
-          </span>
+          <Icon name="arrow_forward" className="service-card__cta-icon" />
         </a>
       </div>
     </div>

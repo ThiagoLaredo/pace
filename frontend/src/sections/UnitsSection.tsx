@@ -90,7 +90,7 @@ export const UnitsSection: React.FC = () => {
                   <div className="unit-card__section">
                     <div className="unit-card__line">
                       <Icon name="location_on" className="unit-card__icon" />
-                      <span>{unit.address}</span>
+                      <span className="unit-card__address">{unit.address}</span>
                     </div>
                     <div className="unit-card__line unit-card__line--top">
                       <Icon name="schedule" className="unit-card__icon" />
@@ -135,6 +135,11 @@ export const UnitsSection: React.FC = () => {
                       ) : null}
                     </div>
                   </div>
+
+                  <a href="#" className="unit-card__cta">
+                    Conheça mais
+                    <Icon name="arrow_forward" className="unit-card__chip-icon" />
+                  </a>
                 </div>
               </article>
             </RevealOnScroll>

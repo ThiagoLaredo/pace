@@ -24,7 +24,6 @@ const profiles = [
     label: 'Dos Casos',
     iconName: 'psychology',
     color: 'secondary' as const,
-    highlighted: true,
   },
   {
     title: 'Dominante Estrutural',
