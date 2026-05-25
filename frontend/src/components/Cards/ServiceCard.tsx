@@ -28,7 +28,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="service-card group">
       {/* Image Container */}
-      <div className="relative h-[300px] rounded-xl overflow-hidden mb-0">
+      <div className="relative h-[300px] rounded-t-xl overflow-hidden mb-0">
         <img
           alt={title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -41,11 +41,10 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+        <h3 className="service-card__title service-card__title--overlay">{title}</h3>
       </div>
 
       <div className="service-card__content">
-        <h3 className="service-card__title">{title}</h3>
-
         {/* Description */}
         <p className="service-card__description">{description}</p>
 

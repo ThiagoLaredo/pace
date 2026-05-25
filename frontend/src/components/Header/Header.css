@@ -84,8 +84,8 @@
 .header__cta {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--on-primary);
-  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1.8px solid var(--secondary);
   padding: 10px 20px;
   border-radius: 999px;
   text-decoration: none;

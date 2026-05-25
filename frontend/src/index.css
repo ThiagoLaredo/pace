@@ -183,6 +183,62 @@ body {
   animation-delay: 0.62s;
 }
 
+.hero-scroll-indicator {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.82;
+}
+
+.hero-scroll-indicator__label {
+  font-family: var(--heading);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-scroll-indicator__mouse {
+  position: relative;
+  width: 24px;
+  height: 36px;
+  border: 1.4px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: transparent;
+}
+
+.hero-scroll-indicator__wheel {
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  width: 3px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  transform: translateX(-50%);
+  animation: heroScrollWheel 1.8s var(--ease-smooth) infinite;
+}
+
+@keyframes heroScrollWheel {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  25% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.2;
+    transform: translate(-50%, 11px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 11px);
+  }
+}
+
 .hero__overlay {
   background: linear-gradient(90deg, rgba(1, 81, 88, 0.95) 0%, rgba(1, 81, 88, 0.7) 38%, rgba(1, 81, 88, 0.15) 72%, transparent 100%);
 }
@@ -200,6 +256,12 @@ body {
 
   .hero-section .hero-entrance--scroll {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-indicator__wheel {
+    animation: none;
   }
 }
 
@@ -284,8 +346,8 @@ body {
   z-index: 10;
   pointer-events: none;
   background-color: #0b676c;
-  mix-blend-mode: lighten;
-  opacity: 0.6;
+  mix-blend-mode: color;
+  opacity: 0.4;
   border-radius: inherit;
 }
 

@@ -73,14 +73,16 @@ export const HeroSection: React.FC = () => {
 
         {/* Right Decoration */}
         <div className="hero-entrance hero-entrance--right hidden md:flex justify-end items-end" style={{ opacity: 0.55 }}>
-          <DotGrid className="w-48 h-48 text-secondary" />
+          <DotGrid className="w-48 h-48 text-primary" />
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="hero-entrance hero-entrance--scroll absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+      <div className="hero-entrance hero-entrance--scroll hero-scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2">
+        <span className="hero-scroll-indicator__label">Scroll</span>
+        <div className="hero-scroll-indicator__mouse" aria-hidden="true">
+          <span className="hero-scroll-indicator__wheel"></span>
+        </div>
       </div>
     </section>
   );

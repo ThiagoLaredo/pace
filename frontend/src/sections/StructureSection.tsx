@@ -134,7 +134,7 @@ export const StructureSection: React.FC = () => {
               </li>
               <li className="structure-feature__item flex items-center gap-3">
                 <CheckCircleIcon />
-                <span className="font-bold">Equipamentos de última geração para avaliação, treino, reabilitação e recuperação.</span>
+                <span className="font-bold">Equipamentos de última geração para avaliação, treino, reabilitação e recuperação</span>
               </li>
             
             </ul>
