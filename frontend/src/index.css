@@ -244,11 +244,19 @@ body {
   background: linear-gradient(90deg, rgba(1, 81, 88, 0.95) 0%, rgba(1, 81, 88, 0.7) 38%, rgba(1, 81, 88, 0.15) 72%, transparent 100%);
 }
 
+.hero-section__image {
+  object-position: center center;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     align-items: flex-start;
     min-height: 78vh;
     padding-top: 44px !important;
+  }
+
+  .hero-section__image {
+    object-position: 56% center;
   }
 
   .hero-section .hero-entrance--left {
@@ -1275,10 +1283,12 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(29, 221, 184, 0.58) 38%,
-    rgba(200, 222, 150, 0.82) 47%,
-    rgba(200, 222, 150, 0.82) 53%,
-    rgba(29, 221, 184, 0.58) 62%,
+    rgba(29, 221, 184, 0.5) 34%,
+    rgba(95, 221, 173, 0.62) 42%,
+    rgba(165, 224, 161, 0.74) 48%,
+    rgba(165, 224, 161, 0.74) 52%,
+    rgba(95, 221, 173, 0.62) 58%,
+    rgba(29, 221, 184, 0.5) 66%,
     transparent 100%
   );
 }

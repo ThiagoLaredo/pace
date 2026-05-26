@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           alt="High performance training center"
-          className="w-full h-full object-cover"
+          className="hero-section__image w-full h-full object-cover"
           src="/images/optimized/hero/hero3-fallback.webp"
           srcSet="/images/optimized/hero/hero3-640.webp 640w, /images/optimized/hero/hero3-960.webp 960w, /images/optimized/hero/hero3-1280.webp 1280w, /images/optimized/hero/hero3-1366.webp 1366w"
           sizes="100vw"
