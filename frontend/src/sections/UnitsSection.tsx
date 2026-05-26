@@ -69,7 +69,7 @@ export const UnitsSection: React.FC = () => {
         <RevealOnScroll>
           <SectionTitle
             label="Nossas Unidades"
-            title="Escolha a Pace mais perto de voce"
+            title="Escolha a Pace mais perto de você"
             centered
           />
         </RevealOnScroll>

@@ -55,11 +55,17 @@
   text-transform: uppercase;
   color: var(--primary);
   text-decoration: none;
-  transition: gap 0.2s ease;
+  transition: gap 0.2s ease, color 0.2s ease;
 }
 
 .group:hover .service-card__cta {
+  color: var(--secondary);
   gap: 0.6rem;
+}
+
+.service-card__cta:focus-visible {
+  color: var(--secondary);
+  outline: none;
 }
 
 .service-card__cta-icon {

@@ -4,15 +4,20 @@ import './Footer.css';
 const Footer = () => {
   const year = new Date().getFullYear();
   const services = [
-    'Fisioterapia',
-    'Pace Sports',
-    'Prevencao de lesoes',
-    'Recovery',
-    'Fisioterapia Domiciliar',
-    'Locacao de equipamentos',
+    { label: 'Fisioterapia', to: '/servicos' },
+    { label: 'Pace Sports', to: '/servicos' },
+    { label: 'Prevencao de lesoes', to: '/servicos' },
+    { label: 'Recovery', to: '/servicos' },
+    { label: 'Fisioterapia Domiciliar', to: '/servicos' },
+    { label: 'Locacao de equipamentos', to: '/servicos' },
   ];
 
-  const units = ['Jardins', 'Vila Mariana', 'Butanta', 'Clube Athletico Paulistano'];
+  const units = [
+    { label: 'Jardins', to: '/unidades' },
+    { label: 'Vila Mariana', to: '/unidades' },
+    { label: 'Butanta', to: '/unidades' },
+    { label: 'Clube Athletico Paulistano', to: '/unidades' },
+  ];
 
   return (
     <footer className="footer">
@@ -53,7 +58,11 @@ const Footer = () => {
           <h3 className="footer__title">Servicos</h3>
           <ul className="footer__list">
             {services.map((service) => (
-              <li key={service}>{service}</li>
+              <li key={service.label}>
+                <Link to={service.to} className="footer__link">
+                  {service.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -62,7 +71,11 @@ const Footer = () => {
           <h3 className="footer__title">Unidades</h3>
           <ul className="footer__list">
             {units.map((unit) => (
-              <li key={unit}>{unit}</li>
+              <li key={unit.label}>
+                <Link to={unit.to} className="footer__link">
+                  {unit.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

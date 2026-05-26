@@ -8,6 +8,15 @@ import { ProfileCard } from '../components/Cards/ProfileCard';
 
 const profiles = [
   {
+    title: 'Dominante Psicossocial',
+    description:
+      'Entendemos o impacto do estresse, sono e fatores emocionais na percepção da dor e velocidade de recuperação.',
+    percentage: '39%',
+    label: 'Dos Casos',
+    iconName: 'psychology',
+    color: 'primary' as const,
+  },
+  {
     title: 'Dominante por Atividade',
     description:
       'Foco em atletas e entusiastas cujo diagnóstico está diretamente ligado ao volume ou técnica do gesto esportivo.',
@@ -15,15 +24,6 @@ const profiles = [
     label: 'Dos Casos',
     iconName: 'fitness_center',
     color: 'primary' as const,
-  },
-  {
-    title: 'Dominante Psicossocial',
-    description:
-      'Entendemos o impacto do estresse, sono e fatores emocionais na percepção da dor e velocidade de recuperação.',
-    percentage: '39%',
-    label: 'Dos Casos',
-    iconName: 'psychology',
-    color: 'secondary' as const,
   },
   {
     title: 'Dominante Estrutural',
@@ -37,9 +37,6 @@ const profiles = [
 ];
 
 export const ProfilesSection: React.FC = () => {
-  const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
-  const activeIndex = hoveredIndex ?? 1;
-
   return (
     <SectionContainer bgColor="surface-variant">
       <RevealOnScroll>
@@ -48,14 +45,8 @@ export const ProfilesSection: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-8">
         {profiles.map((profile, index) => (
           <RevealOnScroll key={index} delay={`${0.08 * index}s`}>
-            <div
-              className="h-full"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              onFocus={() => setHoveredIndex(index)}
-              onBlur={() => setHoveredIndex(null)}
-            >
-              <ProfileCard {...profile} highlighted={index === activeIndex} />
+            <div className="h-full">
+              <ProfileCard {...profile} highlighted={index === 1} />
             </div>
           </RevealOnScroll>
         ))}

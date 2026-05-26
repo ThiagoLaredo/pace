@@ -24,8 +24,8 @@ export const HeroSection: React.FC = () => {
         <img
           alt="High performance training center"
           className="w-full h-full object-cover"
-          src="/images/optimized/hero/hero-main-fallback.webp"
-          srcSet="/images/optimized/hero/hero-main-640.webp 640w, /images/optimized/hero/hero-main-960.webp 960w, /images/optimized/hero/hero-main-1280.webp 1280w"
+          src="/images/optimized/hero/hero3-fallback.webp"
+          srcSet="/images/optimized/hero/hero3-640.webp 640w, /images/optimized/hero/hero3-960.webp 960w, /images/optimized/hero/hero3-1280.webp 1280w, /images/optimized/hero/hero3-1366.webp 1366w"
           sizes="100vw"
           width={1366}
           height={530}
@@ -72,8 +72,8 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Right Decoration */}
-        <div className="hero-entrance hero-entrance--right hidden md:flex justify-end items-end" style={{ opacity: 0.55 }}>
-          <DotGrid className="w-48 h-48 text-primary" />
+        <div className="hero-entrance hero-entrance--right hidden md:flex justify-end items-end">
+          <DotGrid className="w-48 h-48 text-secondary"/>
         </div>
       </div>
 
