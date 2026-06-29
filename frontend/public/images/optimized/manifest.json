@@ -1,258 +1,34 @@
 {
-  "generatedAt": "2026-05-22T13:47:04.265Z",
-  "includeAvif": false,
+  "generatedAt": "2026-06-29T13:17:19.433Z",
+  "includeAvif": true,
   "images": {
-    "hero-main": {
-      "id": "hero-main",
-      "width": 1366,
-      "height": 530,
-      "sizes": "(max-width: 768px) 100vw, 100vw",
-      "webp": {
-        "src": "/images/optimized/hero/hero-main-fallback.webp",
-        "srcSet": "/images/optimized/hero/hero-main-640.webp 640w, /images/optimized/hero/hero-main-960.webp 960w, /images/optimized/hero/hero-main-1280.webp 1280w, /images/optimized/hero/hero-main-1366.webp 1366w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\hero-2.jpg"
-    },
-    "unit-jardins": {
-      "id": "unit-jardins",
-      "width": 453,
-      "height": 302,
-      "sizes": "(max-width: 768px) 100vw, 240px",
-      "webp": {
-        "src": "/images/optimized/unidades/jardins-fallback.webp",
-        "srcSet": "/images/optimized/unidades/jardins-320.webp 320w, /images/optimized/unidades/jardins-453.webp 453w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\unidades\\Pace-Site-2025-Unidades-Jardins.jpg"
-    },
     "unit-vila-mariana": {
       "id": "unit-vila-mariana",
-      "width": 453,
-      "height": 302,
+      "width": 1536,
+      "height": 1024,
       "sizes": "(max-width: 768px) 100vw, 240px",
       "webp": {
         "src": "/images/optimized/unidades/vila-mariana-fallback.webp",
-        "srcSet": "/images/optimized/unidades/vila-mariana-320.webp 320w, /images/optimized/unidades/vila-mariana-453.webp 453w"
+        "srcSet": "/images/optimized/unidades/vila-mariana-320.webp 320w, /images/optimized/unidades/vila-mariana-480.webp 480w, /images/optimized/unidades/vila-mariana-640.webp 640w, /images/optimized/unidades/vila-mariana-800.webp 800w, /images/optimized/unidades/vila-mariana-1536.webp 1536w"
       },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\unidades\\Pace-Site-2025-Unidades-Vila-Mariana.jpg"
+      "avif": {
+        "srcSet": "/images/optimized/unidades/vila-mariana-320.avif 320w, /images/optimized/unidades/vila-mariana-480.avif 480w, /images/optimized/unidades/vila-mariana-640.avif 640w, /images/optimized/unidades/vila-mariana-800.avif 800w, /images/optimized/unidades/vila-mariana-1536.avif 1536w"
+      },
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\optimized\\unidades\\vila-mariana.webp"
     },
     "unit-butanta": {
       "id": "unit-butanta",
-      "width": 453,
-      "height": 302,
+      "width": 1536,
+      "height": 1024,
       "sizes": "(max-width: 768px) 100vw, 240px",
       "webp": {
         "src": "/images/optimized/unidades/butanta-fallback.webp",
-        "srcSet": "/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-453.webp 453w"
+        "srcSet": "/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-480.webp 480w, /images/optimized/unidades/butanta-640.webp 640w, /images/optimized/unidades/butanta-800.webp 800w, /images/optimized/unidades/butanta-1536.webp 1536w"
       },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\unidades\\Pace-Site-2025-Unidades-Butanta.jpg"
-    },
-    "unit-cap": {
-      "id": "unit-cap",
-      "width": 453,
-      "height": 302,
-      "sizes": "(max-width: 768px) 100vw, 240px",
-      "webp": {
-        "src": "/images/optimized/unidades/cap-fallback.webp",
-        "srcSet": "/images/optimized/unidades/cap-320.webp 320w, /images/optimized/unidades/cap-453.webp 453w"
+      "avif": {
+        "srcSet": "/images/optimized/unidades/butanta-320.avif 320w, /images/optimized/unidades/butanta-480.avif 480w, /images/optimized/unidades/butanta-640.avif 640w, /images/optimized/unidades/butanta-800.avif 800w, /images/optimized/unidades/butanta-1536.avif 1536w"
       },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\unidades\\Pace-Site-2025-Unidades-CAP (1).jpg"
-    },
-    "service-fisioterapia": {
-      "id": "service-fisioterapia",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/fisioterapia-fallback.webp",
-        "srcSet": "/images/optimized/services/fisioterapia-320.webp 320w, /images/optimized/services/fisioterapia-480.webp 480w, /images/optimized/services/fisioterapia-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4zP712PadSaj2nRB_72MWFRgDzpKf28qghiE4ZX7Y8z0PY7dtPBRjgGvncPbmlt6m_svQxQX7tWFv155sY9vUx7vDcOJFbsJNf0lcI33sJeDUbfb77uvGygEh6JC9Qmtn1S12z2Ofm67QcDQOZdK3Xa3BJxlNnmNfMLZwK8NxZaiYKT3Y4bVu7k5hMjY1akxGcH66gQPqW0XFk20VCPzJQGLzla5Xh0plX9vXRCGHTxm25n6XW5QIUVZ2wfctSJKHlutp7nSMB6I"
-    },
-    "service-pace-sports": {
-      "id": "service-pace-sports",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/pace-sports-fallback.webp",
-        "srcSet": "/images/optimized/services/pace-sports-320.webp 320w, /images/optimized/services/pace-sports-480.webp 480w, /images/optimized/services/pace-sports-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaztQJTeQtZ6JLwYwRj0kj1B_SJhv-o8io0lQMsX7nzk_nmzWMEgh8GvAn00tclZ0ZW7-8906vep-XWZ944hYW_EM3WY2iaNA9xxfJVt3MnIC-0BTFsAjYgjehNSfuLtZ3OOeQq-ML8It8oQrigXLToxg43DcXgHhwTXqX7x_dr13S6dwI9mvVa9DQXLswjrWGjgOR5tcSYp0YFWglK5rP_U8qIXZbgocqnm8ggPLauqOHNvTewKzsklLt5c91kzxSv30XdqKQDwk"
-    },
-    "service-prevencao": {
-      "id": "service-prevencao",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/prevencao-fallback.webp",
-        "srcSet": "/images/optimized/services/prevencao-320.webp 320w, /images/optimized/services/prevencao-480.webp 480w, /images/optimized/services/prevencao-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuACzv-8QiS0EGp8CydOpWxONfPTy67d1cXZneFDZCMrdiRXu3m3FJXHcM4oPa-gg3svI8OEb4mfcx_9qu2xsk8iwYiMEgTP5-CJUWFMdQAQRPw28tgFfQk61j_qX1bzzHZItDJral0A54-zbgeM9vvvRnAHW7ArjOUQJjGaL0yAGRftGiaeGgK_I_F7kgdWSOjTLBRwHGm5yWZ3TsvUatzC4D8P32u4p84IXeFCXIteADD-dPFimyilXa-M8jfALLWh1TJOMc5e0lw"
-    },
-    "service-recovery": {
-      "id": "service-recovery",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/recovery-fallback.webp",
-        "srcSet": "/images/optimized/services/recovery-320.webp 320w, /images/optimized/services/recovery-480.webp 480w, /images/optimized/services/recovery-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBt5-CthE-c_RzPfec7pbDChU4URB2k3nQBgV-MOWxhaqh7mx0q9yBbq4cZ0_lMxYXTghZdzzQVGEKKt_R4aX0XwriBPMSZwcaHmQjb9GxztazhGB1skVu9dE-yOY4VypPiPoZwWqR-DbZqMsahKK-3dsBJIPADpGlm5jkT75wJ5ZlRXM0N4DHoKn-tJ_5u_FmhPwRAmJU9XRCJNl12XINTG0RLgJoW8Zp30_6qVbJdJ-cTuJYiw8Akv4CecD13E8bGHwJkJXZ9Qps"
-    },
-    "service-domiciliar": {
-      "id": "service-domiciliar",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/domiciliar-fallback.webp",
-        "srcSet": "/images/optimized/services/domiciliar-320.webp 320w, /images/optimized/services/domiciliar-480.webp 480w, /images/optimized/services/domiciliar-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuDo_ednhimcDm3hPamz55vThG7QFs7nguFoj0SpcT99z_ylUjgs4RpK7Ea6ShkcF9yiV7CuK5gTsOFe61CqkSEzwsCSNc_bssKphl1_XjJWOrbL-5Hr-mWzJhdyxf3EwjKq4RVhM3Cv4YI1BLKRVw3jSsDaUMKhCR_Wn87sEAwm-76jwbD9ghStDlbRje_ApH9LWFCI9tvmNE2nEbS9yHo4aRG3RwXCrP-_i407bIy8SZdX2ho8spELDe8QC0fL1D2-_euiviXyNEc"
-    },
-    "service-equipamentos": {
-      "id": "service-equipamentos",
-      "width": 512,
-      "height": 341,
-      "sizes": "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw",
-      "webp": {
-        "src": "/images/optimized/services/equipamentos-fallback.webp",
-        "srcSet": "/images/optimized/services/equipamentos-320.webp 320w, /images/optimized/services/equipamentos-480.webp 480w, /images/optimized/services/equipamentos-512.webp 512w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuC4RJT_ekZF9WtoSIKnye6grmhnNJxjnBHsel8uoDtMKHJCtF61N92C4JQjLK_neC2wSaldfD3kvSIXKwuaUOLvs9CelTgsjyHn7RNXAxX0hnMPk08GWTMaN55qUaoMgPRYHikjiP00FZ6Q5LTmTuMUF0v-hi6NUpd7dHxTNxAh5S3T5zs8NKOIrCFwIxXHWvRJnm39SuOE9ccgRXz7fhv9jEqKnDoeZ0onXndMqRpfL9njoK-0u1Nqe30pC2ZdCwIpX6tj0gzS2mo"
-    },
-    "structure-18": {
-      "id": "structure-18",
-      "width": 962,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-18-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-18-480.webp 480w, /images/optimized/clinica/pace-clinica-18-640.webp 640w, /images/optimized/clinica/pace-clinica-18-960.webp 960w, /images/optimized/clinica/pace-clinica-18-962.webp 962w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-18.jpg"
-    },
-    "structure-27": {
-      "id": "structure-27",
-      "width": 963,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-27-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-27-480.webp 480w, /images/optimized/clinica/pace-clinica-27-640.webp 640w, /images/optimized/clinica/pace-clinica-27-960.webp 960w, /images/optimized/clinica/pace-clinica-27-963.webp 963w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-27.jpg"
-    },
-    "structure-35": {
-      "id": "structure-35",
-      "width": 964,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-35-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-35-480.webp 480w, /images/optimized/clinica/pace-clinica-35-640.webp 640w, /images/optimized/clinica/pace-clinica-35-960.webp 960w, /images/optimized/clinica/pace-clinica-35-964.webp 964w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-35.jpg"
-    },
-    "structure-44": {
-      "id": "structure-44",
-      "width": 964,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-44-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-44-480.webp 480w, /images/optimized/clinica/pace-clinica-44-640.webp 640w, /images/optimized/clinica/pace-clinica-44-960.webp 960w, /images/optimized/clinica/pace-clinica-44-964.webp 964w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-44.jpg"
-    },
-    "structure-63": {
-      "id": "structure-63",
-      "width": 962,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-63-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-63-480.webp 480w, /images/optimized/clinica/pace-clinica-63-640.webp 640w, /images/optimized/clinica/pace-clinica-63-960.webp 960w, /images/optimized/clinica/pace-clinica-63-962.webp 962w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-63.jpg"
-    },
-    "structure-80": {
-      "id": "structure-80",
-      "width": 964,
-      "height": 642,
-      "sizes": "(max-width: 1024px) 100vw, 50vw",
-      "webp": {
-        "src": "/images/optimized/clinica/pace-clinica-80-fallback.webp",
-        "srcSet": "/images/optimized/clinica/pace-clinica-80-480.webp 480w, /images/optimized/clinica/pace-clinica-80-640.webp 640w, /images/optimized/clinica/pace-clinica-80-960.webp 960w, /images/optimized/clinica/pace-clinica-80-964.webp 964w"
-      },
-      "avif": null,
-      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\clinica\\pace_clinica-80.jpg"
-    },
-    "partner-balance": {
-      "id": "partner-balance",
-      "width": 452,
-      "height": 200,
-      "sizes": "(max-width: 768px) 120px, 160px",
-      "webp": {
-        "src": "/images/optimized/partners/balance-fallback.webp",
-        "srcSet": "/images/optimized/partners/balance-160.webp 160w, /images/optimized/partners/balance-240.webp 240w, /images/optimized/partners/balance-320.webp 320w, /images/optimized/partners/balance-452.webp 452w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfH-TSOfMioAZRHp1BFheFgLB93buCNjMsj97-MD2qDOMD5_zdMO9j1ge7fv9fd1tqaCUsPysQk2pHaqpDWJIiRZFK_mn3Qt4ZkS_NeKlh8OopetJTVSUh6TTJQ7u_xISDw5dMKbXV7tC3e1gBQySZ3xHoo1JI2kPXZmbV1jy5BgdPd9NHgxej78wpkLmOtFf9S2w4FbdGuBOYQOMMn7YDan98u0DYK6XQP8fqu0oFAeSAoyiO9Ea2s71wGS0_VjKlPzkiClsXeg"
-    },
-    "partner-boali": {
-      "id": "partner-boali",
-      "width": 226,
-      "height": 100,
-      "sizes": "(max-width: 768px) 120px, 160px",
-      "webp": {
-        "src": "/images/optimized/partners/boali-fallback.webp",
-        "srcSet": "/images/optimized/partners/boali-160.webp 160w, /images/optimized/partners/boali-226.webp 226w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuBPslaSn0KgNu6S6dozFjiG7jomcXtX4ivXZABtNGMn6y71N1l9qCHI7lFVYdp3_8C642oaDvZaj5eimVJ7jBKYDk9NO0ln2-0-ij0cssRRFmLmwhQZztSY0BJOXT4Xxu_Ng07GFaqnf5CtCcCM3Mkrc7P3gsRCPNpKNVAegGdDvbjy4rIbqc-RmkvqgmcfAZYsejS97wcOOYUOSF2Xt5vjObIp36snAqTlMqMYMKmXmssIFdYfRpzgmaqGf4caC-xs7vjiMKQx2q0"
-    },
-    "partner-bauerfeind": {
-      "id": "partner-bauerfeind",
-      "width": 226,
-      "height": 100,
-      "sizes": "(max-width: 768px) 120px, 160px",
-      "webp": {
-        "src": "/images/optimized/partners/bauerfeind-fallback.webp",
-        "srcSet": "/images/optimized/partners/bauerfeind-160.webp 160w, /images/optimized/partners/bauerfeind-226.webp 226w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnMBYPBpR6ndoIy_MXRkyWOOdIZs-fEL8b9YPGkVF-aepfo-iqSfTSLaAnaPOFdK79OZ17-sGR4KtPtCFvrFhfWyG9ZOZ89abGgwFCPSG-YCYRGD5Se6EQzZigzX7iSti5t34d-rJRAUXwImcOx-tOa67uT6mbvd7ZQSTP6oq4zCuaBhJw19aAn5V-vRzO1zU6jyDi1N9FKR2pamu3uXY5gXFsQTNIyvrA_pEdJAdnctO4C4_0YmXJ_9zqNAU0Zpahy8JJZFx2ECA"
-    },
-    "partner-djo": {
-      "id": "partner-djo",
-      "width": 226,
-      "height": 100,
-      "sizes": "(max-width: 768px) 120px, 160px",
-      "webp": {
-        "src": "/images/optimized/partners/djo-fallback.webp",
-        "srcSet": "/images/optimized/partners/djo-160.webp 160w, /images/optimized/partners/djo-226.webp 226w"
-      },
-      "avif": null,
-      "source": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbjWtAA220zH__En_RMsQ5-lJ2-_IwQvvcaTSC5pC6VXQMg8h5chuHzvDdiDxQz0zuWTguEaRys7mF0-LZMphjlLxu6egu4CA2OLV6W2LwtgRHdxjUpkt0aNeIMIAyWHFcFhiUUYl_RDImIcwyReVm4gR9JwFhRv2vdVTAUxTps4GvfhbdJ_axZb6CoTKWjGLB4qjswfDs0aGqgZZNWCMOehWAXNZollnbLRvzaCtXoZlrFY3VbA1-tCPRdtSans-KMGEAANOAI4Y"
+      "source": "C:\\Users\\lared\\OneDrive\\Documentos\\Sites\\clinicapace\\frontend\\public\\images\\optimized\\unidades\\butanta.webp"
     }
   }
 }

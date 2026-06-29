@@ -24,11 +24,11 @@ export const HeroSection: React.FC = () => {
         <img
           alt="High performance training center"
           className="hero-section__image w-full h-full object-cover"
-          src="/images/optimized/hero/hero3-fallback.webp"
-          srcSet="/images/optimized/hero/hero3-640.webp 640w, /images/optimized/hero/hero3-960.webp 960w, /images/optimized/hero/hero3-1280.webp 1280w, /images/optimized/hero/hero3-1366.webp 1366w"
+          src="/images/optimized/hero/hero-new-fallback.webp"
+          srcSet="/images/optimized/hero/hero-new-640.webp 640w, /images/optimized/hero/hero-new-960.webp 960w, /images/optimized/hero/hero-new-1280.webp 1280w, /images/optimized/hero/hero-new-1672.webp 1672w"
           sizes="100vw"
-          width={1366}
-          height={530}
+          width={1672}
+          height={941}
           fetchPriority="high"
           loading="eager"
           decoding="async"

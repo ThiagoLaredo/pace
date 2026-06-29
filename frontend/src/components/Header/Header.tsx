@@ -22,7 +22,7 @@ const Header = () => {
       <div className="header__inner container">
         <Link to="/" className="header__logo" onClick={closeMenu}>
           <img
-            src="/images/Logo-pace-verde.svg"
+            src="/images/Logo-pace-header.svg"
             alt="Clínica Pace"
             className="header__logo-image"
           />

@@ -21,7 +21,7 @@ const units = [
     name: 'Jardins',
     image: '/images/optimized/unidades/jardins-fallback.webp',
     imageSrcSet:
-      '/images/optimized/unidades/jardins-320.webp 320w, /images/optimized/unidades/jardins-453.webp 453w',
+      '/images/optimized/unidades/jardins-320.webp 320w, /images/optimized/unidades/jardins-453.webp 453w, /images/optimized/unidades/jardins-480.webp 480w, /images/optimized/unidades/jardins-640.webp 640w, /images/optimized/unidades/jardins-800.webp 800w',
     phones: ['(11) 99457-3619', '(11) 2729-4268'],
     email: 'jardins@clinicapace.com.br',
     address: 'R. Haddock Lobo, 1421 / Loja 08 – Mezanino',
@@ -32,7 +32,7 @@ const units = [
     name: 'Vila Mariana',
     image: '/images/optimized/unidades/vila-mariana-fallback.webp',
     imageSrcSet:
-      '/images/optimized/unidades/vila-mariana-320.webp 320w, /images/optimized/unidades/vila-mariana-453.webp 453w',
+      '/images/optimized/unidades/vila-mariana-320.webp 320w, /images/optimized/unidades/vila-mariana-453.webp 453w, /images/optimized/unidades/vila-mariana-480.webp 480w, /images/optimized/unidades/vila-mariana-640.webp 640w, /images/optimized/unidades/vila-mariana-800.webp 800w',
     phones: ['(11) 99455-6493', '(11) 2373-6486'],
     email: 'vilamariana@clinicapace.com.br',
     address: 'Rua Dr. Amancio de Carvalho, 182 – Conjunto 401',
@@ -43,7 +43,7 @@ const units = [
     name: 'Butanta / USP',
     image: '/images/optimized/unidades/butanta-fallback.webp',
     imageSrcSet:
-      '/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-453.webp 453w',
+      '/images/optimized/unidades/butanta-320.webp 320w, /images/optimized/unidades/butanta-453.webp 453w, /images/optimized/unidades/butanta-480.webp 480w, /images/optimized/unidades/butanta-640.webp 640w, /images/optimized/unidades/butanta-800.webp 800w',
     phones: ['(11) 93231-1310', '(11) 2373-6486'],
     address: 'Rua Alvarenga, 2022',
     region: 'Butanta | São Paulo',
@@ -53,7 +53,7 @@ const units = [
     name: 'Club Athletico Paulistano',
     image: '/images/optimized/unidades/cap-fallback.webp',
     imageSrcSet:
-      '/images/optimized/unidades/cap-320.webp 320w, /images/optimized/unidades/cap-453.webp 453w',
+      '/images/optimized/unidades/cap-320.webp 320w, /images/optimized/unidades/cap-453.webp 453w, /images/optimized/unidades/cap-480.webp 480w, /images/optimized/unidades/cap-640.webp 640w, /images/optimized/unidades/cap-800.webp 800w',
     phones: ['(11) 99100-2699', '(11) 3065-2002'],
     email: 'paulistano@clinicapace.com.br',
     address: 'R. Honduras, 1400',
@@ -88,7 +88,7 @@ export const UnitsSection: React.FC = () => {
                     decoding="async"
                     width={453}
                     height={302}
-                    sizes="(max-width: 768px) 100vw, 220px"
+                    sizes="(max-width: 768px) 100vw, 360px"
                   />
                 </div>
 

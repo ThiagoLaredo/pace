@@ -9,6 +9,16 @@ const rootDir = path.resolve(path.dirname(currentFilePath), '..');
 const publicDir = path.join(rootDir, 'public');
 const optimizedDir = path.join(publicDir, 'images', 'optimized');
 const includeAvif = process.argv.includes('--avif');
+const onlyArg = process.argv.find((arg) => arg.startsWith('--only='));
+const onlyJobIds = onlyArg
+  ? new Set(
+      onlyArg
+        .slice('--only='.length)
+        .split(',')
+        .map((id) => id.trim())
+        .filter(Boolean),
+    )
+  : null;
 
 const REMOTE_TIMEOUT_MS = 15000;
 
@@ -32,6 +42,9 @@ const jobs = [
     widths: [320, 480, 640, 800],
     sizes: '(max-width: 768px) 100vw, 240px',
     fit: 'cover',
+    webpQuality: 88,
+    fallbackWebpQuality: 90,
+    avifQuality: 58,
   },
   {
     id: 'unit-vila-mariana',
@@ -42,6 +55,9 @@ const jobs = [
     widths: [320, 480, 640, 800],
     sizes: '(max-width: 768px) 100vw, 240px',
     fit: 'cover',
+    webpQuality: 88,
+    fallbackWebpQuality: 90,
+    avifQuality: 58,
   },
   {
     id: 'unit-butanta',
@@ -52,6 +68,9 @@ const jobs = [
     widths: [320, 480, 640, 800],
     sizes: '(max-width: 768px) 100vw, 240px',
     fit: 'cover',
+    webpQuality: 88,
+    fallbackWebpQuality: 90,
+    avifQuality: 58,
   },
   {
     id: 'unit-cap',
@@ -62,6 +81,9 @@ const jobs = [
     widths: [320, 480, 640, 800],
     sizes: '(max-width: 768px) 100vw, 240px',
     fit: 'cover',
+    webpQuality: 88,
+    fallbackWebpQuality: 90,
+    avifQuality: 58,
   },
   {
     id: 'service-fisioterapia',
@@ -229,6 +251,15 @@ async function ensureDirectory(dirPath) {
   await fs.mkdir(dirPath, { recursive: true });
 }
 
+async function fileExists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function fetchWithTimeout(url, timeoutMs) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
@@ -245,12 +276,37 @@ async function fetchWithTimeout(url, timeoutMs) {
   }
 }
 
-async function loadInputBuffer(job) {
-  if (job.type === 'local') {
-    return fs.readFile(job.input);
+async function resolveLocalInputPath(job) {
+  if (await fileExists(job.input)) {
+    return job.input;
   }
 
-  return fetchWithTimeout(job.input, REMOTE_TIMEOUT_MS);
+  const optimizedFallback = path.join(job.outputDir, `${job.baseName}.webp`);
+  if (await fileExists(optimizedFallback)) {
+    process.stdout.write(
+      `Source for ${job.id} not found at ${job.input}. Falling back to ${optimizedFallback}\n`,
+    );
+    return optimizedFallback;
+  }
+
+  throw new Error(
+    `Local source not found for ${job.id}. Tried ${job.input} and ${optimizedFallback}`,
+  );
+}
+
+async function loadInput(job) {
+  if (job.type === 'local') {
+    const resolvedInputPath = await resolveLocalInputPath(job);
+    return {
+      source: resolvedInputPath,
+      buffer: await fs.readFile(resolvedInputPath),
+    };
+  }
+
+  return {
+    source: job.input,
+    buffer: await fetchWithTimeout(job.input, REMOTE_TIMEOUT_MS),
+  };
 }
 
 function toPublicPath(absolutePath) {
@@ -260,7 +316,7 @@ function toPublicPath(absolutePath) {
 async function generateVariants(job) {
   await ensureDirectory(job.outputDir);
 
-  const inputBuffer = await loadInputBuffer(job);
+  const { source, buffer: inputBuffer } = await loadInput(job);
   const metadata = await sharp(inputBuffer).metadata();
 
   if (!metadata.width || !metadata.height) {
@@ -275,6 +331,9 @@ async function generateVariants(job) {
 
   const webpOutputs = [];
   const avifOutputs = [];
+  const webpQuality = job.webpQuality ?? 78;
+  const fallbackWebpQuality = job.fallbackWebpQuality ?? 80;
+  const avifQuality = job.avifQuality ?? 50;
 
   for (const width of chosenWidths) {
     const basePipeline = sharp(inputBuffer).resize({
@@ -284,12 +343,12 @@ async function generateVariants(job) {
     });
 
     const webpAbsolutePath = path.join(job.outputDir, `${job.baseName}-${width}.webp`);
-    await basePipeline.clone().webp({ quality: 78, effort: 5 }).toFile(webpAbsolutePath);
+    await basePipeline.clone().webp({ quality: webpQuality, effort: 5 }).toFile(webpAbsolutePath);
     webpOutputs.push(`${toPublicPath(webpAbsolutePath)} ${width}w`);
 
     if (includeAvif) {
       const avifAbsolutePath = path.join(job.outputDir, `${job.baseName}-${width}.avif`);
-      await basePipeline.clone().avif({ quality: 50, effort: 5 }).toFile(avifAbsolutePath);
+      await basePipeline.clone().avif({ quality: avifQuality, effort: 5 }).toFile(avifAbsolutePath);
       avifOutputs.push(`${toPublicPath(avifAbsolutePath)} ${width}w`);
     }
   }
@@ -299,7 +358,7 @@ async function generateVariants(job) {
 
   await sharp(inputBuffer)
     .resize({ width: largestWidth, fit: job.fit, withoutEnlargement: true })
-    .webp({ quality: 80, effort: 5 })
+    .webp({ quality: fallbackWebpQuality, effort: 5 })
     .toFile(fallbackAbsolutePath);
 
   return {
@@ -316,7 +375,7 @@ async function generateVariants(job) {
           srcSet: avifOutputs.join(', '),
         }
       : null,
-    source: job.input,
+    source,
   };
 }
 
@@ -329,7 +388,13 @@ async function main() {
     images: {},
   };
 
-  for (const job of jobs) {
+  const jobsToRun = onlyJobIds ? jobs.filter((job) => onlyJobIds.has(job.id)) : jobs;
+
+  if (jobsToRun.length === 0) {
+    throw new Error('No matching jobs to run. Check the --only argument.');
+  }
+
+  for (const job of jobsToRun) {
     process.stdout.write(`Optimizing ${job.id}...\n`);
     const result = await generateVariants(job);
     manifest.images[job.id] = result;

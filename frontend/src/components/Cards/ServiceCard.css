@@ -17,13 +17,8 @@
   color: var(--on-surface);
 }
 
-.service-card__title--overlay {
-  position: absolute;
-  left: 1.25rem;
-  right: 1.25rem;
-  bottom: 1rem;
-  z-index: 1;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+.service-card__title--content {
+  margin-bottom: 0.75rem;
 }
 
 .service-card__content {
