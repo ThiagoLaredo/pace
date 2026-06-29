@@ -255,8 +255,8 @@ body {
     padding-top: 44px !important;
   }
 
-  .hero-section__image {
-    object-position: 56% center;
+  .hero-section .hero-section__image {
+    object-position: 82% center !important;
   }
 
   .hero-section .hero-entrance--left {
