@@ -838,7 +838,7 @@ body {
 
   .services-showcase__media-frame {
     aspect-ratio: 16 / 10;
-    min-height: 220px;
+    /* min-height: 220px; */
     box-shadow: 0 14px 30px rgba(2, 18, 19, 0.28);
   }
 
