@@ -24,6 +24,19 @@ const REMOTE_TIMEOUT_MS = 15000;
 
 const jobs = [
   {
+    id: 'hero-new-2',
+    type: 'local',
+    input: path.join(optimizedDir, 'hero', 'hero-new-2.png'),
+    outputDir: path.join(optimizedDir, 'hero'),
+    baseName: 'hero-new-2',
+    widths: [640, 960, 1280, 1672],
+    sizes: '100vw',
+    fit: 'cover',
+    webpQuality: 86,
+    fallbackWebpQuality: 88,
+    avifQuality: 58,
+  },
+  {
     id: 'hero-main',
     type: 'local',
     input: path.join(publicDir, 'images', 'hero-2.jpg'),

@@ -423,6 +423,142 @@ body {
   letter-spacing: 0.05em;
 }
 
+.services-showcase__track {
+  --service-count: 6;
+  min-height: calc(var(--service-count) * 68vh);
+}
+
+.services-showcase__sticky {
+  position: sticky;
+  top: 84px;
+  height: calc(100vh - 108px);
+  display: flex;
+  align-items: center;
+}
+
+.services-showcase__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.services-showcase__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 100%;
+}
+
+.services-showcase__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.75rem;
+}
+
+.services-showcase__trigger {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 0.8rem;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.services-showcase__index {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(179, 221, 216, 0.42);
+  transition: color 0.3s ease;
+}
+
+.services-showcase__title {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: rgba(179, 221, 216, 0.5);
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.services-showcase__description-wrap {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: max-height 0.4s var(--ease-smooth), opacity 0.28s ease, transform 0.35s ease;
+}
+
+.services-showcase__description {
+  margin: 0;
+  padding: 0.55rem 0 0.15rem 52px;
+  color: var(--on-surface-variant);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.services-showcase__item.is-active .services-showcase__index {
+  color: rgba(239, 240, 154, 0.82);
+}
+
+.services-showcase__item.is-active .services-showcase__title {
+  color: var(--on-surface);
+  transform: translateX(2px);
+}
+
+.services-showcase__item.is-active .services-showcase__description-wrap {
+  max-height: 180px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-showcase__media {
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.services-showcase__media-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(1, 65, 70, 0.5);
+}
+
+.services-showcase__media-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(1, 81, 88, 0.02), rgba(1, 81, 88, 0.22));
+}
+
+.services-showcase__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.035);
+  transition: opacity 0.45s ease, transform 0.55s ease;
+}
+
+.services-showcase__image.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .units-section {
   background: linear-gradient(180deg, rgba(1, 81, 88, 0.1), transparent);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -664,6 +800,7 @@ body {
   .services-section__intro {
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.25rem;
   }
 
   .services-section__heading {
@@ -672,6 +809,60 @@ body {
     align-items: center;
     width: 100%;
     text-align: center;
+  }
+
+  .services-showcase__heading-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .services-showcase__track {
+    min-height: unset;
+  }
+
+  .services-showcase__sticky {
+    position: static;
+    height: auto;
+  }
+
+  .services-showcase__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .services-showcase__media {
+    order: -1;
+    position: sticky;
+    top: calc(72px + env(safe-area-inset-top) + 0.25rem);
+    z-index: 4;
+  }
+
+  .services-showcase__media-frame {
+    aspect-ratio: 16 / 10;
+    min-height: 220px;
+    box-shadow: 0 14px 30px rgba(2, 18, 19, 0.28);
+  }
+
+  .services-showcase__list {
+    gap: 0.45rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .services-showcase__trigger {
+    grid-template-columns: 36px 1fr;
+  }
+
+  .services-showcase__title {
+    font-size: 1.04rem;
+  }
+
+  .services-showcase__description {
+    padding-left: 42px;
+    font-size: 0.94rem;
+  }
+
+  .services-showcase__item.is-active .services-showcase__description-wrap {
+    max-height: 220px;
   }
 
   .structure-tech-badge {
