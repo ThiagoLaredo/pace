@@ -69,6 +69,45 @@ export const ServicesSection: React.FC = () => {
       const rect = track.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
+      const items = track.querySelectorAll<HTMLElement>('.services-showcase__item');
+      if (items.length > 0) {
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const anchorY = viewportHeight * (isMobile ? 0.76 : 0.44);
+        let containsAnchorIndex = -1;
+        let nearestIndex = 0;
+        let nearestDistance = Number.POSITIVE_INFINITY;
+
+        items.forEach((item, index) => {
+          const itemRect = item.getBoundingClientRect();
+          const center = itemRect.top + itemRect.height / 2;
+          const centerDistance = Math.abs(center - anchorY);
+
+          if (centerDistance < nearestDistance) {
+            nearestDistance = centerDistance;
+            nearestIndex = index;
+          }
+
+          if (containsAnchorIndex === -1 && itemRect.top <= anchorY && itemRect.bottom >= anchorY) {
+            containsAnchorIndex = index;
+          }
+        });
+
+        const nextIndex = containsAnchorIndex === -1 ? nearestIndex : containsAnchorIndex;
+
+        setActiveIndex((prev) => {
+          if (nextIndex > prev + 1) {
+            return prev + 1;
+          }
+
+          if (nextIndex < prev - 1) {
+            return prev - 1;
+          }
+
+          return prev === nextIndex ? prev : nextIndex;
+        });
+        return;
+      }
+
       const start = viewportHeight * 0.2;
       const end = rect.height - viewportHeight * 0.6;
       const distance = end <= 0 ? 1 : end;
