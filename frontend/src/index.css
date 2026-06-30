@@ -272,6 +272,10 @@ body {
   .hero-scroll-indicator__wheel {
     animation: none;
   }
+
+  .cta-section__card {
+    animation: none;
+  }
 }
 
 .structure-features-list .icon {
@@ -882,11 +886,29 @@ body {
 .cta-card-gradient {
   background: linear-gradient(
     100deg,
-    rgba(7, 95, 98, 0.82) 0%,
-    rgba(20, 170, 150, 0.45) 64%,
-    rgba(254, 255, 153, 0.22) 88%,
-    rgba(254, 255, 153, 0.3) 100%
+    rgba(7, 95, 98, 0.86) 0%,
+    rgba(14, 132, 125, 0.5) 34%,
+    rgba(254, 255, 153, 0.34) 52%,
+    rgba(254, 255, 153, 0.2) 67%,
+    rgba(18, 146, 135, 0.46) 82%,
+    rgba(7, 95, 98, 0.84) 100%
   );
+}
+
+.cta-section__card {
+  background-size: 240% 170%;
+  animation: ctaGradientSlide 9.5s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes ctaGradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .cta-texture {
